@@ -1,0 +1,591 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: .8px;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin: 0px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 20px 0 10px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+/* Hero */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  height: 58vh;
+  background: white;
+}
+
+.content {
+  max-width: 50%;
+  /* text-align: right; (esse é o oficial quando se tem foto)*/
+  text-align: center;
+}
+
+.content h2 {
+  /* text-align: right; (esse é o oficial quando se tem foto)*/
+  text-align: center;
+}
+
+.content p {
+  max-width: 500px;
+  margin: 20px 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #666;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  margin-top: 30px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+}
+
+a:visited {
+  color: white;
+}
+
+.image img {
+  max-width: 550px;
+  margin-top: 108px;
+  padding: 0;
+  height: auto;
+  display: block;
+}
+
+/* Nav Bar */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background: black;
+  text-align: center;
+  padding: 20px 0;
+  font-size: .85em;
+  margin: 0;
+  letter-spacing: .7px;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: #9c9c9c;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.navbar a.active {
+  font-weight: bold;
+  color: white;
+}
+
+.navbar a:hover {
+  color: white;
+  font-size: 1.05em;
+  padding: 0;
+  margin: 0;
+  transform: scale(1.1);
+}
+
+section {
+  scroll-margin-top: 50px;
+  /* ajuste para a altura que o link me manda na pagina */
+}
+
+
+/* About Me */
+
+.aboutMe {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.aboutMeTopo {
+  margin-top: 60px;
+  text-align: justify;
+  text-align: center;
+  display: block;
+  font-size: 1rem;
+}
+
+.aboutMeTopo p {
+  color: #666;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 0 40px;
+  text-align: justify;
+  font-size: 1rem;
+  margin-top: 60px;
+}
+
+.grid p {
+  font-size: .9rem;
+  line-height: 1.5rem;
+}
+
+.dir {
+  margin-top: 50px;
+}
+
+.col ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 30px;
+  font-size: .9rem;
+  line-height: 1.7rem;
+}
+
+.fa-check {
+  margin-right: 10px;
+}
+
+/* Barrinhas linguas */
+
+.languages {
+  max-width: 600px;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.language {
+  margin-bottom: 30px;
+}
+
+.language span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 7px;
+}
+
+.bar {
+  background: #e0e0e0;
+  height: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.fill {
+  background: #6e6e6e;
+  height: 100%;
+  position: relative;
+  border-radius: 5px;
+  transition: width 1s ease-in-out;
+}
+
+.percent {
+  background: #3d3d3d;
+  color: white;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 15px;
+  position: absolute;
+  top: -30px;
+  right: 0;
+  transform: translateX(50%);
+  white-space: nowrap;
+  font-family: sans-serif;
+}
+
+/* SKILL */
+
+.skills {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #fafafa;
+}
+
+.skills h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.skills p {
+  margin: 30px 0 130px 0;
+  color: #666;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 0;
+}
+
+.skill-item {
+  flex: 1 1 200px;
+  max-width: 200px;
+}
+
+.skill-item i {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: black;
+  border-bottom: 2px dashed #999;
+  padding-bottom: 15px;
+  display: inline-block;
+}
+
+.skill-item h3 {
+  margin: 20px 0 10px;
+  font-size: 1.4rem;
+}
+
+.skill-item p {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 60px;
+}
+
+/* EXPERIENCE */
+
+.experience {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.experience h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+.experience-p {
+  line-height: 28px;
+}
+
+.experience p {
+  text-align: center;
+  color: #666;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 30px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 27px;
+  left: 7px;
+  width: 1px;
+  height: calc(97%);
+  background-color: #8b8b8b;
+}
+
+.timeline-item:last-child::before {
+  display: none;
+}
+
+.fa-person-walking {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 16px;
+  height: 16px;
+}
+
+.job {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 15px 20px;
+}
+
+.job h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.job small {
+  display: block;
+  color: #888;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 0.85rem;
+  border-bottom: rgb(124, 124, 124) 1px dashed;
+  padding-bottom: 15px;
+}
+
+.job p {
+  margin: 0;
+  text-align: left;
+  font-size: .9rem;
+  padding-top: 10px;
+}
+
+/* Footer */
+
+footer {
+  background: #000;
+  color: #fff;
+  padding: 120px 0 90px 0;
+  font-family: sans-serif;
+}
+
+footer hr {
+  margin: 100px 0 0 0;
+  width: 100%;
+  color: #1f1f1f;
+  border: solid 1px;
+}
+
+/* Titulo  */
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+/* Infos */
+
+.contact-wrapper {
+  background-color: #000;
+  color: #fff;
+}
+
+.contact-box {
+  display: flex;
+  max-width: 1000px;
+  padding: 0 2%;
+  margin: 0 20%;
+  gap: 40px;
+  align-items: stretch;
+  text-align: right;
+}
+
+.contact-top {
+  margin-top: -20px;
+}
+
+.contact-top h4 {
+  margin-bottom: 15px;
+}
+
+.contact-top p {
+  color: #929292;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.contact-left,
+.contact-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Importante para alinhar topo e base */
+}
+
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 440px;
+  /* tamanho da caixa de texto do email */
+}
+
+input,
+textarea {
+  padding: 10px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+}
+
+button {
+  padding: 10px 20px;
+  background: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  align-self: flex-end;
+  font-weight: 600;
+  border-radius: 14px;
+}
+
+/* Social Icons */
+
+.contact-bottom {
+  margin-bottom: 51px;
+}
+
+.social-icons-bottom {
+  font-size: 12px;
+}
+
+.social-icons-bottom i {
+  margin-right: 10px;
+}
+
+.name-footer {
+  text-align: center;
+  letter-spacing: 3px;
+  color: #6e6e6e;
+  margin: 20px 0 0 0;
+}
+
+/* Media Query para telas menores*/
+
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+    overflow-x: clip;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .navbar {
+    margin: 0;
+  }
+
+  .section-title {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .aboutMe,
+  .skills,
+  .experience,
+  .contact {
+    padding: 2rem 5rem;
+  }
+
+  .aboutMe,
+  .skills,
+  .timeline,
+  .contact-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .skills,
+  .experience {
+    width: 100%;
+  }
+
+.contact-wrapper {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem; /* espaçamento entre info e formulário */
+  padding: 1rem;
+}
+
+.contact-wrapper {
+  width: 100%;
+}
+
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-right form {
+    width: 100%;
+  }
+
+  .social-icons-top,
+  .social-icons-bottom {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .social-icons-bottom {
+    margin-top: 5%;
+  }
+
+  .contact-top,
+  .contact-bottom {
+    align-items: center;
+    text-align: center;
+  }
+
+  .timeline::before {
+    left: 0;
+  }
+
+  .experience-dot {
+    left: 0;
+    transform: translateX(0);
+  }
+
+  .experience-line {
+    left: 0;
+    height: 100%;
+    width: 3px;
+    margin-left: -1.5px;
+  }
+}
