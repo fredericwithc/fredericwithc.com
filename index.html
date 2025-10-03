@@ -27,19 +27,20 @@
       <h1>But call me Fred.</h1>
 
       <p>
-        I'm passionate about learning new things. I love diving into new ideas, figuring things out, and creating cool
-        stuff—whether it’s design, code, or just something that makes people smile.
+        I'm a <strong>Front-end Developer</strong> transitioning from architecture and 3D visualization.
+        I'm passionate about learning new things by diving into new ideas, figuring things out, and creating cool
+        stuff, whether it’s design, code, or just something that I think someone might like.
       </p>
 
       <div class="social-icons">
-        <a href="https://www.linkedin.com/in/frederic-chomé-42a64b17b/" target="_blank"
-          aria-label="Frederic's Linkedin"><i class="fa-brands fa-linkedin fa-2xl" style="color: #000000;"></i></a>
+        <a href="https://www.linkedin.com/in/frederic-leyenberger/" target="_blank" aria-label="Frederic's Linkedin"><i
+            class="fa-brands fa-linkedin fa-2xl" style="color: #1B3C53;"></i></a>
         <!--TER CERTEZA QUE OS LINKS VÃO PRO LUGAR CERTO-->
         <a href="https://github.com/fredericwithc" target="_blank" title="My Github"><i class="fab fa-github fa-2xl"
-            style="color: #000000;"></i></a>
+            style="color: #1B3C53;"></i></a>
         <!--TER CERTEZA QUE OS LINKS VÃO PRO LUGAR CERTO-->
         <a href="mailto:fredericcbl@gmail.com" target="_blank" title="Let's talk!"><i
-            class="fa-solid fa-envelope fa-2xl" style="color: #000000;"></i></a>
+            class="fa-solid fa-envelope fa-2xl" style="color: #1B3C53;"></i></a>
         <!--TER CERTEZA QUE OS LINKS VÃO PRO LUGAR CERTO-->
       </div>
 
@@ -59,11 +60,20 @@
 
   <nav class="navbar">
 
-    <ul>
+    <!-- Botão hambúrguer (só aparece no mobile) -->
+    <button class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul id="nav-menu">
       <li><a href="#home-Nav" class="active">Home</a></li>
       <li><a href="#aboutMe-Nav">About Me</a></li>
       <li><a href="#skills-Nav">Skills</a></li>
+      <li><a href="#projects-Nav">Projects</a></li>
       <li><a href="#experience-Nav">Experience</a></li>
+      <li><a href="#education-Nav">Education</a></li>
       <li><a href="#contact-Nav">Contact</a></li>
     </ul>
 
@@ -98,10 +108,10 @@
 
           <p>After graduating in Architecture and working in 3D visualization, I explored the basics of programming out
             of
-            curiosity. Although I initially followed a different path, I later realized that this area of coding aligned
-            more with my interests, which led me back to front-end development, where I now blend design sensibility
-            with
-            technical skills to build modern web interfaces.
+            curiosity. Now I'm actively seeking opportunities
+            as a Front-end Developer, where I can blend my design sensibility with technical
+            skills to build modern web applications. I'm ready to contribute to a team and
+            continue growing in this field.
           </p>
 
         </div>
@@ -110,8 +120,8 @@
 
           <p>I’ve always had a soft spot for pixel art, immersive single-player adventures, and pasta in all its
             glorious
-            forms. There’s something special about the comfort of a good story-driven game and the ritual of cooking. If
-            the night includes both, that’s pretty much my definition of a perfect evening.</p>
+            forms. There’s something special about the comfort of a good story-driven game and the ritual of eating. If
+            the night includes both, that’s pretty much my definition of a great evening.</p>
 
         </div>
 
@@ -123,11 +133,11 @@
             opportunity to improve my skills and discover better ways to solve problems.</p>
 
           <ul>
-            <li><i class="fa-solid fa-check" style="color: #000000;"></i> Strong attention to detail.</li>
-            <li><i class="fa-solid fa-check" style="color: #000000;"></i> Clear and friendly communication.</li>
-            <li><i class="fa-solid fa-check" style="color: #000000;"></i> Willingness to ask, learn, and improve.</li>
-            <li><i class="fa-solid fa-check" style="color: #000000;"></i> Sense of ownership and responsibility.</li>
-            <li><i class="fa-solid fa-check" style="color: #000000;"></i> Positive attitude and team spirit.</li>
+            <li><i class="fa-solid fa-check" style="color: #1B3C53;"></i> Strong attention to detail.</li>
+            <li><i class="fa-solid fa-check" style="color: #1B3C53;"></i> Clear and friendly communication.</li>
+            <li><i class="fa-solid fa-check" style="color: #1B3C53;"></i> Willingness to ask, learn, and improve.</li>
+            <li><i class="fa-solid fa-check" style="color: #1B3C53;"></i> Sense of ownership and responsibility.</li>
+            <li><i class="fa-solid fa-check" style="color: #1B3C53;"></i> Positive attitude and team spirit.</li>
           </ul>
 
         </div>
@@ -201,7 +211,8 @@
         <div class="skill-item">
           <i class="fa-brands fa-js"></i>
           <h3>JavaScript</h3>
-          <p>With JavaScript, static pages become dynamic—data updates, buttons react, and users get better experiences.
+          <p>With JavaScript, static pages become dynamic, buttons react, and users get better experiences.
+            This has been a challenge, but skill grows stronger through persistent practice.
           </p>
         </div>
 
@@ -214,8 +225,131 @@
         <div class="skill-item">
           <i class="fa-brands fa-react"></i>
           <h3>React</h3>
-          <p>React makes learning JavaScript more practical—I understand the “why” behind reactivity and user-driven
-            interfaces.</p>
+          <p>Implemented real-time interactions and responsive layouts using React, reinforcing core front-end skills.
+          </p>
+        </div>
+
+        <div class="skill-item">
+          <i class="fa-brands fa-envira fa-rotate-by"></i>
+          <h3>MongoDB</h3>
+          <p>Experienced using MongoDB to store, manage, and query application data in JSON format.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <hr>
+
+    <!-- Projects -->
+
+    <section id="projects-Nav" class="projects">
+
+      <h2>My Projects</h2>
+
+      <p class="projects-p">A collection of web development projects that showcase my coding journey.</p>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-item">
+          <div class="project-image">
+            <img src="./Images/projectimages/tictactoe.jpg" alt="Tic-Tac-Toe Game">
+            <div class="project-overlay">
+              <div class="project-info">
+                <h3>Tic-Tac-Toe</h3>
+                <p>Designed and programmed a responsive Tic-Tac-Toe game with simple user interface.</p>
+                <div class="project-tags">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://fredericwithc.github.io/Tic-Tac-Toe/" target="_blank" title="View Live"><i
+                      class="fa-solid fa-external-link"></i></a>
+                  <a href="https://github.com/fredericwithc/Tic-Tac-Toe" target="_blank" title="View Code"><i
+                      class="fa-brands fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-item">
+          <div class="project-image">
+            <img src="./Images/projectimages/jogoMemoria.jpg" alt="Memory Game">
+            <div class="project-overlay">
+              <div class="project-info">
+                <h3>Memory Game</h3>
+                <p>Built a interactive memory game project showcasing logic, design, and JavaScript functionality.</p>
+                <div class="project-tags">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://fredericwithc.github.io/Jogo-da-Memoria/" target="_blank" title="View Live"><i
+                      class="fa-solid fa-external-link"></i></a>
+                  <a href="https://github.com/fredericwithc/Jogo-da-Memoria" target="_blank" title="View Code"><i
+                      class="fa-brands fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-item">
+          <div class="project-image">
+            <img src="./Images/projectimages/elonsmuskmoney.jpg" alt="Spending Elon's Money">
+            <div class="project-overlay">
+              <div class="project-info">
+                <h3>Spending Elon Musk's Money</h3>
+                <p>Coded a playful spending simulator where users allocate Elon Musk’s resources.</p>
+                <div class="project-tags">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://fredericwithc.github.io/Spending-Elon-s-Money/" target="_blank" title="View Live"><i
+                      class="fa-solid fa-external-link"></i></a>
+                  <a href="https://github.com/fredericwithc/Spending-Elon-s-Money" target="_blank" title="View Code"><i
+                      class="fa-brands fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-item">
+          <div class="project-image">
+            <img src="./Images/projectimages/Stratego.jpg" alt="Stratego Game">
+            <div class="project-overlay">
+              <div class="project-info">
+                <h3>Stratego Game</h3>
+                <p>Created an interactive Stratego game project in React to practice advanced front-end development.</p>
+                <div class="project-tags">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
+                  <span>React</span>
+                  <span>Firebase</span>
+                  <span>Photoshop</span>
+                  <span>Illustrator</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://fredericwithc.github.io/stratego-game/" target="_blank" title="View Live"><i
+                      class="fa-solid fa-external-link"></i></a>
+                  <a href="https://github.com/fredericwithc/stratego-game" target="_blank" title="View Code"><i
+                      class="fa-brands fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -236,9 +370,22 @@
         aswell!</p>
 
       <div class="timeline">
-        <div class="timeline-item">
-          <i class="fa-solid fa-person-walking fa-lg" style="color: #000000;"></i>
 
+        <div class="timeline-item">
+          <i class="fa-solid fa-person-walking fa-lg" style="color: #1B3C53;"></i>
+          <div class="job">
+
+            <h3>Web Developer</h3>
+            <small>2025</small>
+            <p>Thinking of digital solutions for websites and applications, combining code and design to attend the
+              necessities for each project.</p>
+
+          </div>
+
+        </div>
+
+        <div class="timeline-item">
+          <i class="fa-solid fa-person-walking fa-lg" style="color: #1B3C53;"></i>
           <div class="job">
 
             <h3>Elephant-Skin</h3>
@@ -250,7 +397,7 @@
         </div>
 
         <div class="timeline-item">
-          <i class="fa-solid fa-person-walking fa-lg" style="color: #000000;"></i>
+          <i class="fa-solid fa-person-walking fa-lg" style="color: #1B3C53;"></i>
           <div class="job">
 
             <h3>Architect</h3>
@@ -261,7 +408,7 @@
         </div>
 
         <div class="timeline-item">
-          <i class="fa-solid fa-person-walking fa-lg" style="color: #000000;"></i>
+          <i class="fa-solid fa-person-walking fa-lg" style="color: #1B3C53;"></i>
           <div class="job">
 
             <h3>Pura Raiz</h3>
@@ -272,29 +419,29 @@
         </div>
 
         <div class="timeline-item">
-          <i class="fa-solid fa-person-walking fa-lg" style="color: #000000;"></i>
+          <i class="fa-solid fa-person-walking fa-lg" style="color: #1B3C53;"></i>
           <div class="job">
 
             <h3>Studio MNN</h3>
             <small>Jan 2015 - Jan 2016</small>
-            <p>Internship in Studio MNN.</p>
+            <p>Architecture Internship in Studio MNN.</p>
 
           </div>
         </div>
 
         <div class="timeline-item">
-          <i class="fa-solid fa-person-walking fa-lg" style="color: #000000;"></i>
+          <i class="fa-solid fa-person-walking fa-lg" style="color: #1B3C53;"></i>
           <div class="job">
 
             <h3>Bia Seiler Arquitetura</h3>
             <small>Jan 2013 - Jan 2014</small>
-            <p>Internship in Bia Seiler Arquitetura.</p>
+            <p>Architect Internship in Bia Seiler Arquitetura.</p>
 
           </div>
         </div>
 
         <div class="timeline-item">
-          <i class="fa-solid fa-person-walking fa-lg" style="color: #000000;"></i>
+          <i class="fa-solid fa-person-walking fa-lg" style="color: #1B3C53;"></i>
           <div class="job">
 
             <h3>Student-Intern PUC-Rio</h3>
@@ -304,19 +451,80 @@
 
           </div>
         </div>
-
-        <div class="timeline-item">
-          <i class="fa-solid fa-person-walking fa-lg" style="color: #000000;"></i>
-          <div class="job">
-
-            <h3>Bachelor Degree in Architecture and Urbanism - PUC-Rio</h3>
-            <small>2011 - 2016</small>
-            <p>5 years of Architecture and Urbanism in Pontificia Universidade Católica do Rio de Janeiro.</p>
-
-          </div>
-        </div>
-        <!-- Adicione mais timeline-items conforme necessário -->
       </div>
+    </section>
+
+    <hr>
+
+    <!-- Educação -->
+
+    <section id="education-Nav" class="education">
+
+      <h2>Education</h2>
+
+      <p class="education-p">Learning never stops! Here's my educational background and the courses that shaped my
+        professional journey.</p>
+
+      <div class="education-container">
+
+        <!-- Education Timeline -->
+        <div class="education-timeline">
+
+          <div class="education-item">
+            <div class="education-icon">
+              <i class="fa-solid fa-laptop-code fa-lg" style="color: #1B3C53;"></i>
+            </div>
+            <div class="education-content">
+              <h3>Development Web - Programador Br</h3>
+              <small>Intensive course</small>
+              <p>Intensive study of modern web technologies including HTML5, CSS3, JavaScript, ReactJS, Node.js,
+                Bootstrap, Firebase, MongoDB.
+                Building responsive and interactive web applications.</p>
+            </div>
+          </div>
+
+          <div class="education-item">
+            <div class="education-icon">
+              <i class="fa-solid fa-laptop-code fa-lg" style="color: #1B3C53;"></i>
+            </div>
+            <div class="education-content">
+              <h3>Web Frontend Fundaments - Udemy</h3>
+              <small>Intensive course</small>
+              <p>Specialized training in core web technologies like HTML5, CSS3, and JavaScript to create interactive
+                and adaptive web applications.</p>
+            </div>
+          </div>
+
+          <div class="education-item">
+            <div class="education-icon">
+              <i class="fa-solid fa-cubes fa-lg" style="color: #1B3C53;"></i>
+            </div>
+            <div class="education-content">
+              <h3>3D Visualization & Rendering</h3>
+              <small>Different Professional Trainings • 2020 - 2024</small>
+              <p>Advanced trainings in 3D modeling, lighting, and photorealistic rendering for architectural
+                visualization. Learning different kinds of softwares and habilities like 3ds Max, Photoshop, Corona
+                Renderer, Unreal and many more. </p>
+            </div>
+          </div>
+
+          <div class="education-item">
+            <div class="education-icon">
+              <i class="fa-solid fa-graduation-cap fa-lg" style="color: #1B3C53;"></i>
+            </div>
+            <div class="education-content">
+              <h3>Bachelor Degree in Architecture and Urbanism</h3>
+              <small>PUC-Rio • 2011 - 2016</small>
+              <p>5 years of Architecture and Urbanism at Pontificia Universidade Católica do Rio de Janeiro. Developed
+                strong foundation in design principles, spatial thinking, and problem-solving.</p>
+            </div>
+          </div>
+
+          <!-- Adicione mais cursos aqui conforme necessário -->
+
+        </div>
+      </div>
+
     </section>
 
   </main>
@@ -326,8 +534,8 @@
   <footer id="contact">
 
     <div class="contact-title">
-      <h2>Get In Touch</h2>
-      <p>Send me a message and <strong>let's talk!</strong> We got this!</p>
+      <h2>Let's Work Together</h2>
+      <p>I'm available for Front-end Development opportunities. <strong>Let's talk!</strong></p>
     </div>
 
     <!-- Infos -->
@@ -343,12 +551,12 @@
           </div>
           <div class="contact-bottom">
             <div class="social-icons-bottom">
-              <a href="https://www.linkedin.com/in/frederic-chom%C3%A9-42a64b17b/" target="_blank"
+              <a href="https://www.linkedin.com/in/frederic-leyenberger/" target="_blank"
                 aria-label="Frederic's Linkedin"><i class="fa-brands fa-linkedin fa-2xl"
-                  style="color: #ffffff;"></i></a>
+                  style="color: #F9F3EF;"></i></a>
               <a href="https://github.com/fredericwithc" target="_blank" aria-label="Frederic's Github"><i
-                  class="fab fa-github fa-2xl" style="color: #ffffff;"></i></a>
-              <a href="#"><i class="fa-solid fa-envelope fa-2xl" style="color: #ffffff;"></i></a>
+                  class="fab fa-github fa-2xl" style="color: #F9F3EF;"></i></a>
+              <!-- <a href="#"><i class="fa-solid fa-envelope fa-2xl" style="color: #F9F3EF;"></i></a> -->
             </div>
           </div>
         </div>
@@ -357,16 +565,28 @@
 
         <div class="contact-right">
           <form action="https://formsubmit.co/fredericcbl@gmail.com" method="POST" target="_blank">
-            <input type="text" name="name" placeholder="Full Name" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <textarea placeholder="Message" name="message" rows="5" required></textarea>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" placeholder="Write your message here" name="message" rows="5" required></textarea>
+            </div>
+
             <button type="submit">Send</button>
           </form>
         </div>
       </div>
       <br>
-      <hr>
-      <p class="name-footer">Frederic Leyenberger</p>
+      <hr style="border: none; border-top: 1px dashed #F9F3EF; background: none;">
+      <p class="name-footer">Frederic Leyenberger | © Copyright 2025 - All rights reserved.</p>
     </section>
 
   </footer>
@@ -400,6 +620,31 @@
         const target = document.querySelector(this.getAttribute("href"));
         target.scrollIntoView({ behavior: "smooth" });
       });
+    });
+
+    // MENU Hamburguer
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    // Fecha menu ao clicar em qualquer link
+    document.querySelectorAll('.navbar a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+      });
+    });
+
+    // Fecha menu ao clicar fora dele
+    document.addEventListener('click', (e) => {
+      if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
     });
 
   </script>
