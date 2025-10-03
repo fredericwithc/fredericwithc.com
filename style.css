@@ -1401,8 +1401,8 @@ button::before {
     margin-bottom: 30px;
   }
 
-    .project-links a {
-font-size: 1.2rem;
+  .project-links a {
+    font-size: 1.2rem;
   }
 
   /* Experience  */
@@ -1478,7 +1478,7 @@ font-size: 1.2rem;
     margin: 0;
   }
 
-  .education-content small{
+  .education-content small {
     font-size: .65rem;
     padding: 0 0 5px 0;
   }
@@ -1490,8 +1490,12 @@ font-size: 1.2rem;
   /* Footer  */
 
   #contact {
-    /* padding-top: 5vh; */
-    padding: 80px 30px ;
+    padding: 80px 30px;
+  }
+
+  /* Ajuste de scroll para seção de contato */
+  #contact-Nav {
+    scroll-margin-top: 250px;
   }
 
   footer h2 {
